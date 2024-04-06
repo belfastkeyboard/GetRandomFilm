@@ -116,9 +116,7 @@ int Handler::get_film()
         return EXIT_FAILURE;
     }
 
-    Random& random = Random::instance();
-
-    std::shuffle(films.begin(), films.end(), random.gen);
+    std::shuffle(films.begin(), films.end(), random::gen());
     Film film = films.front();
 
     print_film(film);
@@ -137,9 +135,7 @@ int Handler::get_film_by_genre()
         return EXIT_FAILURE;
     }
 
-    Random& random = Random::instance();
-
-    std::shuffle(films.begin(), films.end(), random.gen);
+    std::shuffle(films.begin(), films.end(), random::gen());
     Film film = films.front();
 
     print_film(film);
