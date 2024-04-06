@@ -26,9 +26,6 @@ static std::map<std::string, Commands> GetCommand = {
         {"MAKEFILE", Commands::MAKEFILE }, {"COPYFILE", Commands::COPYFILE }, {"DELFILE", Commands::DELFILE }, {"HELPCommands", Commands::HELP }
     };
 
-// TO NOTE: REMOVE removes all films with the same name. this would include remakes. problem?
-// ERROR: Type errors can delete entire files!!
-
 int main(int argc, char* argv[])
 {
     Handler handler;
